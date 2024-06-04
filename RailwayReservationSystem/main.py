@@ -1,10 +1,10 @@
 class Railway:
     def __init__(self):
         print(" ***==> Railway reservation system <==*** ")
-        self.startform = input("Enter your station name: ")
-        self.destination = input("Enter your destination name: ")
+        self.startform = input(" Enter your station name: ")
+        self.destination = input(" Enter your destination name: ")
         self.trains = {
-            "Train1": {"from": "StationA", "to": "StationB"},
+            "Train1": {"from": "morappur", "to": "salem"},
             "Train2": {"from": "StationB", "to": "StationC"},
             "Train3": {"from": "StationA", "to": "StationC"},
         }
@@ -13,6 +13,12 @@ class Railway:
         for train, route in self.trains.items():
             if route["from"] == self.startform and route["to"] == self.destination:
                 print(f"{train} is available from {self.startform} to {self.destination}")
+    def option():
+        print("*** you need choice the option below  ")
+        print("1=>Train avilable check")
+        print("2=> Book the train ticket ")
 
 p1 = Railway()
-p1.find_station()
+
+
+p1.option()
