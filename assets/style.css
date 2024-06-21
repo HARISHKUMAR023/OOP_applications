@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --primary-color: #231651;
+    --secondary-color: #6c757d;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+}
+nav {
+    padding: 15px 8px;
+    color: white;
+   background-color: var(--primary-color);
+}
+.nav-logo{
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    background-color: white;
+}
+#contributter{
+    background-color: #D6FFF6;
+    color: #231651;
+    padding: 8px;
+    border-radius: 4px;
+}
+main > a{
+    color: var(--primary-color);
+}
+.main-a{
+    color: white;
+    background-color:var(--primary-color);
+    padding: 5px;
+    border-radius: 4px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    
+    /* align-items: center; */
+}
+.main-left{
+    width: 100vh;
+    padding: 20px;
+}
+.main-right{
+    padding: 20px;
+    width: 100vh;
+    height: 100vh;
+    background-color: #d6fff6;
+}
+.main-project-btn{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    padding: 5px;
+}
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+  
+  footer > a {
+    text-decoration: none;
+    color: white !important;
+  }
