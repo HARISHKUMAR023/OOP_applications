@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class and Object in Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #333333;
+        }
+        h2 {
+            color: #555555;
+        }
+        p {
+            color: #666666;
+            line-height: 1.6;
+        }
+        .code {
+            background-color: #f4f4f4;
+            border: 1px solid #dddddd;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+        .code pre {
+            margin: 0;
+            font-family: Consolas, 'Courier New', monospace;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Python Classes and Objects</h1>
+      <p>
+        In Python, classes are used to define the structure and behavior of
+        objects. An object is an instance of a class. A class can contain
+        attributes (variables) and methods (functions) that define the behavior
+        of the objects created from the class.
+      </p>
+
+      <h2>Defining a Class</h2>
+      <p>
+        A class is defined using the <code>class</code> keyword. Here's a simple
+        example:
+      </p>
+      <div class="code">
+        <pre>
+class Dog:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def bark(self):
+        return f"{self.name} says woof!"
+            </pre
+        >
+      </div>
+      <p>
+        In this example, <code>Dog</code> is a class with an
+        <code>__init__</code> method that initializes the <code>name</code> and
+        <code>age</code> attributes. The class also has a
+        <code>bark</code> method that returns a string.
+      </p>
+
+      <h2>Creating Objects</h2>
+      <p>
+        Once a class is defined, you can create objects (instances) of that
+        class:
+      </p>
+      <div class="code">
+        <pre>
+my_dog = Dog("Buddy", 3)
+print(my_dog.bark())  # Output: Buddy says woof!
+            </pre
+        >
+      </div>
+      <p>
+        In this example, <code>my_dog</code> is an object of the
+        <code>Dog</code> class. We call the <code>bark</code> method on this
+        object to get the output.
+      </p>
+
+      <h2>Attributes and Methods</h2>
+      <p>
+        Attributes are variables that belong to a class, and methods are
+        functions that belong to a class. Attributes are accessed using the dot
+        notation:
+      </p>
+      <div class="code">
+        <pre>
+print(my_dog.name)  # Output: Buddy
+print(my_dog.age)   # Output: 3
+            </pre
+        >
+      </div>
+      <p>Methods are also accessed using the dot notation:</p>
+      <div class="code">
+        <pre>
+print(my_dog.bark())  # Output: Buddy says woof!
+            </pre
+        >
+      </div>
+
+      <h2>Conclusion</h2>
+      <p>
+        Classes and objects are fundamental concepts in Python that enable you
+        to create reusable code and model real-world entities. By defining
+        classes and creating objects, you can organize your code more
+        effectively and build complex applications with ease.
+      </p>
+    </div>
+  </body>
+</html>
